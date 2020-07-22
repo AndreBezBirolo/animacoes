@@ -1,0 +1,9 @@
+Agora vamos analisar o CSS.
+Começamos definindo que a opacidade do item seja 0 para que ela não apareça na tela e comece -50px da esquerda da posição padrão.
+Quando a classe animação for adicionada, a opacidade será 1, terá uma transição e ele voltará ao local de origem dando um efeito de "vindo da esquerda"
+
+Agora vamos analisar o JS.
+Primeiro vamos pegar a janela do browser como escopo e aplicação a função scroll ou seja, sempre que rolar um scroll acontecerá o que tiver dentro.
+O primeiro 'this' irá retornar o window e a função 'scrollTop' irá retornar a distancia que você já está do topo.
+Depois selecionamos o container que queremos animar e a função 'each' fará a função seguinte se aplicar em todos os itens com essa classe. Essa função irá fazer uma condição verificando se o quanto você já desceu do topo é maior do que a distancia do objeto até o topo da página - uma quantidade que você irá escolher para ele aparecer no meio da página porque sem o "- qualquer valor" ele irá surgir no topo da página.
+Se for maior, ele adicionará uma classe, se não, ele irá remover essa classe.

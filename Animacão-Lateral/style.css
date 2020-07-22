@@ -1,0 +1,9 @@
+.container_que_voce_quer_animar {
+  opacity: 0;
+  transform: translate3d(-50px, 0px, 0px);
+}
+.animacao {
+  opacity: 1;
+  transition: .3s all ease;
+  transform: translate3d(0px, 0px, 0px);
+}
